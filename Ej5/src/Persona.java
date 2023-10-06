@@ -1,5 +1,5 @@
 
-public class Persona {
+public abstract class Persona {
     private String nombre;
     private int edad;
     private char sexo;
@@ -21,4 +21,5 @@ public class Persona {
     public char getSexo() {
         return sexo;
     }
+    public abstract boolean estarPresente();
 }
