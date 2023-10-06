@@ -1,1 +1,0 @@
-# acr-tsys-herencia-git-0610
