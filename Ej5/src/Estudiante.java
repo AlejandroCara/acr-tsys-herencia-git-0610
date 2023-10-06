@@ -22,4 +22,8 @@ public class Estudiante extends Persona{//La clase de Estudiante viene de Person
 		Random random = new Random();
 		return random.nextDouble()<0.5;
 	}
+	
+	public boolean estaAprobado() {
+		return this.calificacionActual>5.0;
+	}
 }

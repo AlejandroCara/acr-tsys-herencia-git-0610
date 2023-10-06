@@ -15,6 +15,16 @@ public class Profesor extends Persona{
 		Random random = new Random();
 		return random.nextDouble()<0.2;
 	}
+
+	public Ej5App.materias getMateria() {
+		return materia;
+	}
+
+	public void setMateria(Ej5App.materias materia) {
+		this.materia = materia;
+	}
+	
+	
 	
 	/*private materias checkMateria(String materia) {
 	    String tmpMater = materia.toLowerCase();

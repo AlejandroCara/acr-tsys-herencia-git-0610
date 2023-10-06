@@ -1,5 +1,6 @@
 
 import java.util.ArrayList;
+import java.util.Iterator;
 
 public class Aula {
 	
@@ -25,7 +26,7 @@ public class Aula {
 	}
 
 	public boolean isDarClase() {
-		return profesor.estarPresente() && alumnos.size() > Math.floor(MAXESTUDIANTES/2);
+		return profesor.estarPresente() && (profesor.getMateria()==materia) && alumnos.size() > Math.floor(MAXESTUDIANTES/2);
 	}
 
 	public int getMaxEstudiantes() {
