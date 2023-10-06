@@ -5,6 +5,7 @@ public class Ej1App {
 		// TODO Auto-generated method stub
 		//Test Ej1 Alejandro
 		//Test Manel
+		System.out.println("Hola");
 	}
 
 }
