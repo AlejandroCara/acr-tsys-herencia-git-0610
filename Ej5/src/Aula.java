@@ -25,8 +25,13 @@ public class Aula {
 	}
 	
 	public boolean isDarClase() {
-		return profesor.estarPresente();
+		return profesor.estarPresente() && alumnos.size() > Math.floor(MAXESTUDIANTES/2);
 	}
+	
+	public int getMaxEstudiantes() {
+		return MAXESTUDIANTES;
+	}
+	
 	
 	
 }
