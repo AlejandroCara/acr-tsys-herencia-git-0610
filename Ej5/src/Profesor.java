@@ -1,13 +1,13 @@
-import Electrodomestico.colors;
+import java.util.Random;
 
 public class Profesor extends Persona{
 
-	private enum materias {matematicas, filosofia, fisica};
 	private Integer disponible;
+	private Ej5App.materias materia;
 	
-	public Profesor(String nombre, int edad, char sexo, String materia) {
+	public Profesor(String nombre, int edad, char sexo, Ej5App.materias materia) {
 		super(nombre, edad, sexo);
-		this.materia = checkMateria(materia);
+		this.materia = materia;
 		this.disponible = 20;
 	}
 	
@@ -16,7 +16,7 @@ public class Profesor extends Persona{
 		return random.nextDouble()<0.2;
 	}
 	
-	private materias checkMateria(String materia) {
+	/*private materias checkMateria(String materia) {
 	    String tmpMater = materia.toLowerCase();
 	    for (materias mater : materias.values()) {
 	    	 if (mater.equals(tmpMater)) {
@@ -24,5 +24,5 @@ public class Profesor extends Persona{
 	    	 }
 	    }
 	    return materias.matematicas;
-	}
+	}*/
 }
