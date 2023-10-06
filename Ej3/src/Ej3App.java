@@ -1,10 +1,9 @@
 
-public class Ej5App {
+public class Ej3App {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		//Test Ej5 Alejandro
-		System.out.println("Hola5");
+
 	}
 
 }
