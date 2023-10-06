@@ -11,9 +11,10 @@ public class Aula {
 	private Profesor profesor;
 	private ArrayList<Estudiante> alumnos = new ArrayList<Estudiante>();
 	
-	public Aula(Profesor profe) {
+	public Aula(Profesor profe, Ej5App.materias materia) {
 		this.id = Aula.idGen;
 		this.profesor = profe;
+		this.materia = materia;
 		Aula.idGen++;
 	}
 	

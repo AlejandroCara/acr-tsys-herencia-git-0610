@@ -17,6 +17,7 @@ public class Estudiante extends Persona{
 	public double getCalificacionActual() {
 		return calificacionActual;
 	}
+	
 	public boolean estarPresente() {
 		Random random = new Random();
 		return random.nextDouble()<0.5;
