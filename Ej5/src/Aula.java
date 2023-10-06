@@ -17,16 +17,19 @@ public class Aula {
 		this.materia = materia;
 		Aula.idGen++;
 	}
-	
+
 	public void addEstudiante(Estudiante estudiante) {
 		if(alumnos.size() < MAXESTUDIANTES) {
 			alumnos.add(estudiante);
 		}
 	}
-	
+
 	public boolean isDarClase() {
-		return profesor.estarPresente();
+		return profesor.estarPresente() && alumnos.size() > Math.floor(MAXESTUDIANTES/2);
 	}
-	
-	
+
+	public int getMaxEstudiantes() {
+		return MAXESTUDIANTES;
+	}
+
 }
