@@ -27,9 +27,9 @@ public class Ej5App {
         }
         aula.addEstudiante(estudiante3);
         aula.addEstudiante(new Estudiante("David", 22, 'M', 7.0));
-        System.out.println("Estado del aula despu�s de agregar m�s estudiantes:");
+        System.out.println("Estado del aula despues de agregar mas estudiantes:");
         System.out.println("Profesor presente: " + aula.isDarClase());
-        //System.out.println("N�mero de estudiantes: " + aula.getNumEstudiantes());
+        //System.out.println("Numero de estudiantes: " + aula.getNumEstudiantes());
         
         // Contar estudiantes aprobados
         List<Estudiante> estudiantes = new ArrayList<>();
