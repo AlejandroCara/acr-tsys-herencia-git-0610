@@ -20,7 +20,7 @@ public class Cine {
 		for (int fila = 0; fila < this.filas; fila++) {
             char letra = 'A';
             for (int columna = 0; columna < this.columnas; columna++) {
-                //asientos[fila][columna] = new Asiento(fila + 1, letra++);
+                //asientos[fila][columna] = new Asiento(fila + 1, letra++); 
             }
         }
 	}
