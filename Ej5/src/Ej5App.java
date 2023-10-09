@@ -36,16 +36,6 @@ public class Ej5App {
         estudiantes.add(estudiante3);
         
         showEstudiantes(estudiantes);
-<<<<<<< HEAD
-        
-        //Comenta conmigo el codigo maÃ±ana
-        /*int aprobadosMujeres = contarAprobadosPorGenero(estudiantes, 'F');
-        int aprobadosHombres = contarAprobadosPorGenero(estudiantes, 'M');
-        
-        System.out.println("Estudiantes aprobados (mujeres): " + aprobadosMujeres);
-        System.out.println("Estudiantes aprobados (hombres): " + aprobadosHombres);*/
-=======
->>>>>>> branch 'main' of https://github.com/AlejandroCara/acr-tsys-herencia-git-0610.git
 	}
 	
 	public static void showEstudiantes(List<Estudiante> alumnado) {
@@ -81,7 +71,7 @@ public class Ej5App {
 			 tmpName = tmpEst.getNombre();
 			 tmpNote = tmpEst.getCalificacionActual();
 			
-			System.out.println("El alumno "+tmpName+" esta aprobado con una calificación de: "+tmpNote);
+			System.out.println("El alumno "+tmpName+" esta aprobado con una calificaciï¿½n de: "+tmpNote);
 		}
 		
 		it = estudiantas.iterator();
@@ -94,7 +84,7 @@ public class Ej5App {
 			 tmpName = tmpEst.getNombre();
 			 tmpNote = tmpEst.getCalificacionActual();
 			
-			System.out.println("La alumna "+tmpName+" esta aprobada con una calificación de: "+tmpNote);
+			System.out.println("La alumna "+tmpName+" esta aprobada con una calificaciï¿½n de: "+tmpNote);
 		}
 		
 	}
