@@ -84,9 +84,9 @@ public class Videojuego implements Entregable{
 	}
 	
 	@Override
-	public integer compareTo() {
+	public int compareTo(Object objeto) {
 	// TODO Auto-generated method stub
-	return Integer.compare(, 0);
+	return Integer.compare(this.horasEstimadas, ((Videojuego)objeto).horasEstimadas);
 	}
 
 	@Override
