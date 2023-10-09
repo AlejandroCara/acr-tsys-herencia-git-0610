@@ -20,11 +20,11 @@ public class Cine {
 		for (int fila = 0; fila < this.filas; fila++) {
             char letra = 'A';
             for (int columna = 0; columna < this.columnas; columna++) {
-                //asientos[fila][columna] = new Asiento(fila + 1, letra++); 
+                asientos[fila][columna] = new Asiento(fila + 1, letra++); 
             }
         }
 	}
-	/*public void sentarEspectador(Espectador espectador) {
+	public void sentarEspectador(Espectador espectador) {
 		Random rand = new Random();
 		while (true) {
             int fila = rand.nextInt(this.filas);
@@ -43,5 +43,5 @@ public class Cine {
                 return;
             }
         }
-	}*/
+	}
 }
