@@ -1,8 +1,5 @@
 
 public class Asiento {
-
-	private static final double MIN_FILA = 1;
-    private static final double MAX_FILA = 9;
 	
 	private char fila;
 	private Integer columna;
@@ -16,7 +13,7 @@ public class Asiento {
 	
 	public Asiento(char fila, Integer columna, Boolean ocupado) {
 		this.fila = fila;
-		this.columna = checkColumna(columna);
+		this.columna = columna;
 		this.ocupado = ocupado;
 	}
 	
@@ -39,13 +36,13 @@ public class Asiento {
 		this.ocupado = ocupado;
 	}
 	
-	public Integer checkColumna(Integer columna) {
+	/*public Integer checkColumna(Integer columna) {
 		if(MIN_FILA<=columna || MAX_FILA>=columna) {
 			return columna;
 		}else {
 			return 0;
 		}
-	}
+	}*/
 	
 	/*public char checkFila(char fila) {
 		if(MIN_FILA<=columna || MAX_FILA>=columna) {
