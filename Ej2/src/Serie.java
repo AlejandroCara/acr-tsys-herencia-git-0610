@@ -40,10 +40,12 @@ public class Serie implements Entregable{
     public String getCreador() {
         return creador;
     }
+
     @Override
     public int compareTo(Object objeto) {
-        return Integer.compare(this.numeroTemporadas, ((Serie)objeto).numeroTemporadas);
+        return Integer.compare(this.getNumeroTemporadas(), ((Serie)objeto).getNumeroTemporadas());
     }
+
     
     public String toString() {
         return "Serie{" +
