@@ -43,7 +43,8 @@ public class Cine {
 
 	public void sentarEspectador(Espectador espectador) {
 		Random rand = new Random();
-		while (true) {
+		Boolean sentado=false;
+		while (!sentado) {
             int fila = rand.nextInt(this.filas);
             int columna = rand.nextInt(this.columnas);
 
@@ -52,13 +53,13 @@ public class Cine {
             if (!asiento.isOcupado() && espectador.cumpleRequisitos(pelicula, precio)) {
                 asiento.setOcupado(true);
                 System.out.println(espectador.getNombre() + " ha ocupado el asiento: " + asiento.getFila() + asiento.getColumna());
-                return;
+				sentado = true;
             }
 
             if (!espectador.cumpleRequisitos(pelicula, precio)) {
             	asiento.setOcupado(false);
                 System.out.println(espectador.getNombre() + " no ha ocupado ningun asiento, no cumple con los requisitos: Edad minima " + pelicula.getEdadMinimaRecomendada() + "->" + espectador.getEdad() + ", Dinero disponible " + precio + "->" + espectador.getDinero());
-                return;
+                break;
             }
         }
 	}
