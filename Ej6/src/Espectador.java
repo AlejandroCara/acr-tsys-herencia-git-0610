@@ -36,7 +36,7 @@ public class Espectador {
 		this.dinero = dinero;
 	}
 	
-	public boolean cumpleRequisitos(Pelicula peli, Integer precio) {
+	public boolean cumpleRequisitos(Pelicula peli, Double precio) {
 		if(precio<=dinero && peli.getEdadMinimaRecomendada()<edad) {
 			return true;
 		}else {

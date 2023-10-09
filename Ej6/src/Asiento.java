@@ -1,32 +1,32 @@
 
 public class Asiento {
 	
-	private char fila;
-	private Integer columna;
+	private Integer fila;
+	private char columna;
 	private boolean ocupado;
 	
 	public Asiento() {
-		this.fila = 'A';
-		this.columna = 0;
+		this.columna = 'A';
+		this.fila = 0;
 		this.ocupado = false;
 	}
 	
 	public Asiento(char fila, Integer columna, Boolean ocupado) {
-		this.fila = fila;
-		this.columna = columna;
+		this.columna = fila;
+		this.fila = columna;
 		this.ocupado = ocupado;
 	}
 	
-	public char getFila() {
+	public Integer getFila() {
 		return fila;
 	}
-	public void setFila(char fila) {
+	public void setFila(Integer fila) {
 		this.fila = fila;
 	}
-	public Integer getColumna() {
+	public char getColumna() {
 		return columna;
 	}
-	public void setColumna(Integer columna) {
+	public void setColumna(char columna) {
 		this.columna = columna;
 	}
 	public boolean isOcupado() {
