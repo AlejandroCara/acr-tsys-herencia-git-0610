@@ -13,8 +13,8 @@ public class Ej5App {
 		Profesor profesor1 = new Profesor("Juan", 43, 'h', materias.fisica);
 		
         Aula aula = new Aula(profesor1, materias.filosofia);
-        aula.addEstudiante(estudiante1);
-        aula.addEstudiante(estudiante2);
+        aula.addAlumno(estudiante1);
+        aula.addAlumno(estudiante2);
         System.out.println("Estado del aula:");
         boolean darClase=aula.isDarClase();
         System.out.println("Profesor presente: " + darClase);
@@ -24,8 +24,8 @@ public class Ej5App {
         } else {
             System.out.println("No se puede dar clase en esta aula.");
         }
-        aula.addEstudiante(estudiante3);
-        aula.addEstudiante(new Estudiante("David", 22, 'M', 7.0));
+        aula.addAlumno(estudiante3);
+        aula.addAlumno(new Estudiante("David", 22, 'M', 7.0));
         System.out.println("Estado del aula despues de agregar mas estudiantes:");
         System.out.println("Profesor presente llamado "+profesor1.getNombre()+" con edad "+profesor1.getEdad()+": " + aula.isDarClase());
         
