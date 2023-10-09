@@ -1,4 +1,4 @@
-
+import java.util.Random;
 public class Cine {
 	private static final int DEF_FILAS = 8;
 	private static final int DEF_COLUMNAS = 9;
