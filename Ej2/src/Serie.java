@@ -55,23 +55,20 @@ public class Serie implements Entregable{
                 '}';
     }
 
-	@Override
-	public void entregar() {
-		// TODO Auto-generated method stub
-		
-	}
+    @Override
+    public void entregar() {
+        this.entregado = true;
+    }
 
-	@Override
-	public void devolver() {
-		// TODO Auto-generated method stub
-		
-	}
+    @Override
+    public void devolver() {
+        this.entregado = false;
+    }
 
-	@Override
-	public boolean isEntregado() {
-		// TODO Auto-generated method stub
-		return false;
-	}
+    @Override
+    public boolean isEntregado() {
+        return this.entregado;
+    }
 
 	
 
