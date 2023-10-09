@@ -8,13 +8,13 @@ public class Asiento {
 	public Asiento() {
 		this.columna = 'A';
 		this.fila = 0;
-		this.ocupado = false;
+		//this.ocupado = false;
 	}
 	
-	public Asiento(Integer fila, char columna, Boolean ocupado) {
+	public Asiento(Integer fila, char columna) {
 		this.columna = columna;
 		this.fila = fila;
-		this.ocupado = ocupado;
+		this.ocupado = false;
 	}
 	
 	public Integer getFila() {
