@@ -71,7 +71,7 @@ public class Ej5App {
 			 tmpName = tmpEst.getNombre();
 			 tmpNote = tmpEst.getCalificacionActual();
 			
-			System.out.println("El alumno "+tmpName+" esta aprobado con una calificaci�n de: "+tmpNote);
+			System.out.println("El alumno "+tmpName+" esta aprobado con una calificacion de: "+tmpNote);
 		}
 		
 		it = estudiantas.iterator();
