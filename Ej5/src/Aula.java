@@ -1,6 +1,5 @@
 
 import java.util.ArrayList;
-import java.util.Iterator;
 
 public class Aula {
 	
@@ -31,6 +30,10 @@ public class Aula {
 
 	public int getMaxEstudiantes() {
 		return MAXESTUDIANTES;
+	}
+	
+	public int getId() {
+		return this.id;
 	}
 
 }

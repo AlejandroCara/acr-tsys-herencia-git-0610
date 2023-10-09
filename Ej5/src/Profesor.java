@@ -2,13 +2,11 @@ import java.util.Random;
 
 public class Profesor extends Persona{
 
-	private Integer disponible;
 	private Ej5App.materias materia;
 	
 	public Profesor(String nombre, int edad, char sexo, Ej5App.materias materia) {
 		super(nombre, edad, sexo);
 		this.materia = materia;
-		this.disponible = 20;
 	}
 	
 	public boolean estarPresente() {
