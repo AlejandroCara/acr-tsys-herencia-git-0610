@@ -25,12 +25,12 @@ public class Videojuego implements Entregable{
 		company ="";
 	}
 	
-	public Videojuego(String titulo, Integer horasEstimadas, String genero, String compañia) {
+	public Videojuego(String titulo, Integer horasEstimadas, String genero, String company) {
 		this.titulo = titulo;
 		this.horasEstimadas = horasEstimadas;
 		entregado = false;
 		this.genero = genero;
-		this.company = compañia;
+		this.company = company;
 	}
 
 	public String getTitulo() {
@@ -57,12 +57,12 @@ public class Videojuego implements Entregable{
 		this.genero = genero;
 	}
 
-	public String getCompañia() {
+	public String getCompany() {
 		return company;
 	}
 
-	public void setCompañia(String compañia) {
-		this.company = compañia;
+	public void setCompany(String company) {
+		this.company = company;
 	}
 
 	@Override
@@ -91,6 +91,6 @@ public class Videojuego implements Entregable{
 	@Override
 	public String toString() {
 		return "Videojuego [titulo=" + titulo + ", horasEstimadas=" + horasEstimadas + ", entregado=" + entregado
-				+ ", genero=" + genero + ", compañia=" + company + "]";
+				+ ", genero=" + genero + ", company=" + company + "]";
 	}
 }
