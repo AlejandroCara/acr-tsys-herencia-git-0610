@@ -84,7 +84,7 @@ public class Ej5App {
 			 tmpName = tmpEst.getNombre();
 			 tmpNote = tmpEst.getCalificacionActual();
 			
-			System.out.println("La alumna "+tmpName+" esta aprobada con una calificaci�n de: "+tmpNote);
+			System.out.println("La alumna "+tmpName+" esta aprobada con una calificacion de: "+tmpNote);
 		}
 		
 	}
