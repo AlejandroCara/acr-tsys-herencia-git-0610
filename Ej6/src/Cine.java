@@ -24,6 +24,23 @@ public class Cine {
             }
         }
 	}
+	
+	
+	public int getFilas() {
+		return filas;
+	}
+
+
+	public int getColumnas() {
+		return columnas;
+	}
+
+
+	public Asiento[][] getAsientos() {
+		return asientos;
+	}
+
+
 	public void sentarEspectador(Espectador espectador) {
 		Random rand = new Random();
 		while (true) {
