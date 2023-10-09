@@ -33,12 +33,13 @@ public class Cine {
             Asiento asiento = asientos[fila][columna];
             
             if (!asiento.isOcupado() && espectador.cumpleRequisitos(pelicula, precio)) {
-                asiento.ocupar();
+                asiento.setOcupado(true);
                 System.out.println(espectador.getNombre() + " ha ocupado el asiento: " + asiento.getFila() + asiento.getColumna());
                 return;
             }
 
             if (!espectador.cumpleRequisitos(pelicula, precio)) {
+            	asiento.setOcupado(false);
                 System.out.println(espectador.getNombre() + " no ha ocupado ningun asiento, no cumple con los requisitos: Edad minima " + pelicula.getEdadMinima() + "->" + espectador.getEdad() + ", Dinero disponible " + precio + "->" + espectador.getDinero());
                 return;
             }
