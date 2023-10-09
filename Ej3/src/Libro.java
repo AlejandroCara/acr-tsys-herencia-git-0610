@@ -7,10 +7,10 @@ public class Libro {
 	private Integer numPaginas;
 	
 	public Libro() {
-		this.isbn = isbn;
-		this.titulo = titulo;
-		this.autor = autor;
-		this.numPaginas = numPaginas;
+		this.isbn = "";
+		this.titulo = "";
+		this.autor = "";
+		this.numPaginas = 0;
 	}
 	
 	public Libro(String isbn, String titulo, String autor, Integer numPaginas) {

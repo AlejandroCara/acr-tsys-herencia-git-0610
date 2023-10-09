@@ -63,7 +63,7 @@ public class Ej5App {
 		String tmpName = "";
 		double tmpNote = 0;
 		
-		System.out.println("ALUMNOS APROVADOS: "+estudiantas.size());
+		System.out.println("ALUMNOS APROVADOS: "+estudiantes.size());
 		
 		while(it.hasNext()) {
 			
