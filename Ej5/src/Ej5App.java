@@ -6,9 +6,9 @@ public class Ej5App {
 	public static enum materias {matematicas, filosofia, fisica};
 	
 	public static void main(String[] args) {
-		Estudiante estudiante1 = new Estudiante("Alice", 18, 'F', 8.5);
-        Estudiante estudiante2 = new Estudiante("Bob", 20, 'M', 7.2);
-        Estudiante estudiante3 = new Estudiante("Charlie", 19, 'M', 6.8);
+		Estudiante estudiante1 = new Estudiante("Alice", 18, 'm', 8.5);
+        Estudiante estudiante2 = new Estudiante("Bob", 20, 'h', 7.2);
+        Estudiante estudiante3 = new Estudiante("Charlie", 19, 'h', 6.8);
         
 		Profesor profesor1 = new Profesor("Juan", 43, 'h', materias.fisica);
 		
@@ -16,7 +16,8 @@ public class Ej5App {
         aula.addAlumno(estudiante1);
         aula.addAlumno(estudiante2);
         System.out.println("Estado del aula:");
-        boolean darClase=aula.isDarClase();
+        
+        boolean darClase = aula.isDarClase();
         System.out.println("Profesor presente: " + darClase);
         
         if (darClase) {
@@ -27,7 +28,7 @@ public class Ej5App {
         aula.addAlumno(estudiante3);
         aula.addAlumno(new Estudiante("David", 22, 'M', 7.0));
         System.out.println("Estado del aula despues de agregar mas estudiantes:");
-        System.out.println("Profesor presente llamado "+profesor1.getNombre()+" con edad "+profesor1.getEdad()+": " + aula.isDarClase());
+        System.out.println("Profesor llamado "+profesor1.getNombre()+" con edad "+profesor1.getEdad()+": " + aula.isDarClase());
         
         // Contar estudiantes aprobados
         List<Estudiante> estudiantes = new ArrayList<>();
@@ -68,8 +69,8 @@ public class Ej5App {
 		while(it.hasNext()) {
 			
 			tmpEst = (Estudiante)it.next();
-			 tmpName = tmpEst.getNombre();
-			 tmpNote = tmpEst.getCalificacionActual();
+			tmpName = tmpEst.getNombre();
+			tmpNote = tmpEst.getCalificacionActual();
 			
 			System.out.println("El alumno "+tmpName+" esta aprobado con una calificacion de: "+tmpNote);
 		}

@@ -53,7 +53,7 @@ public class Ej2App {
 				System.out.println(series[i]);
 			}
 			
-			if(series[i].getNumeroTemporadas() > maxTemporadas.getNumeroTemporadas()) {
+			if(series[i].compareTo(maxTemporadas) == 1) {
 				maxTemporadas = series[i];
 			}
 			
@@ -62,7 +62,7 @@ public class Ej2App {
 				System.out.println(videojuegos[i]);
 			}
 			
-			if(videojuegos[i].getHorasEstimadas() > maxHoras.getHorasEstimadas()) {
+			if(videojuegos[i].compareTo(maxHoras) == 1) {
 				maxHoras = videojuegos[i];
 			}
 		}
