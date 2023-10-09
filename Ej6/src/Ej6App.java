@@ -2,11 +2,13 @@
 public class Ej6App {
 
 	public static void main(String[] args) {
-        // Crear una película
+        // Crear una pelï¿½cula
         Pelicula pelicula = new Pelicula("Titanic", 180, 12, "James Cameron");
-
-        // Crear un cine con la película y precio de entrada
+        
+        // Crear un cine con la pelï¿½cula y precio de entrada
         Cine cine = new Cine(pelicula, 10.0);
+        
+        Asiento[][] asientos = cine.getAsientos();
 
         // Crear espectadores
         Espectador espectador1 = new Espectador("Alice", 14, 15.0);
@@ -18,12 +20,11 @@ public class Ej6App {
         cine.sentarEspectador(espectador2);
         cine.sentarEspectador(espectador3);
 
-        // Verificar el estado de los asientos después de sentar a los espectadores
-        System.out.println("Estado de los asientos después de sentar a los espectadores:");
-        for (int fila = 0; fila < cine.getFilas(); fila++) {
-            for (int columna = 0; columna < cine.getColumnas(); columna++) {
-                Asiento asiento = cine.getAsientos(fila, columna);
-                System.out.print(asiento.isOcupado() ? "X " : "O ");
+        // Verificar el estado de los asientos despuï¿½s de sentar a los espectadores
+        System.out.println("Estado de los asientos despuï¿½s de sentar a los espectadores: \n");
+        for (int i = 0; i < asientos.length; i++) {
+            for (int j = 0; j < asientos[i].length; j++) {
+                System.out.print(asientos[i][j].isOcupado() ? "X " : "O ");
             }
             System.out.println();
         }
