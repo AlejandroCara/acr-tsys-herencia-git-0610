@@ -48,6 +48,4 @@ public class Libro {
 	public String toString() {
 		return "El libro con ISBN: " + isbn + " con el titulo " + titulo + ", creado por el autor " + autor + ", tiene " + numPaginas + " paginas.";
 	}
-
-	
 }
