@@ -7,14 +7,14 @@ public class Videojuego implements Entregable{
 	private Integer horasEstimadas;
 	private Boolean entregado; 
 	private String genero; 
-	private String compañia; 
+	private String company; 
 
 	public Videojuego() {
 		titulo="";
 		horasEstimadas = DEF_HORAS;
 		entregado = false;
 		genero = "";
-		compañia ="";
+		company ="";
 	}
 	
 	public Videojuego(String titulo, Integer horasEstimadas) {
@@ -22,15 +22,15 @@ public class Videojuego implements Entregable{
 		this.horasEstimadas = horasEstimadas;
 		entregado = false;
 		genero = "";
-		compañia ="";
+		company ="";
 	}
 	
 	public Videojuego(String titulo, Integer horasEstimadas, String genero, String compañia) {
 		this.titulo = titulo;
 		this.horasEstimadas = horasEstimadas;
 		entregado = false;
-		genero = genero;
-		compañia = compañia;
+		this.genero = genero;
+		this.company = compañia;
 	}
 
 	public String getTitulo() {
@@ -58,29 +58,28 @@ public class Videojuego implements Entregable{
 	}
 
 	public String getCompañia() {
-		return compañia;
+		return company;
 	}
 
 	public void setCompañia(String compañia) {
-		this.compañia = compañia;
+		this.company = compañia;
 	}
 
 	@Override
 	public void entregar() {
-	// TODO Auto-generated method stub
+		this.entregado = true;
 	
 }
 
 	@Override
 	public void devolver() {
-	// TODO Auto-generated method stub
+		this.entregado = false;
 	
 }
 
 	@Override
 	public boolean isEntregado() {
-	// TODO Auto-generated method stub
-	return false;
+		return this.entregado;
 	}
 	
 	@Override
@@ -92,6 +91,6 @@ public class Videojuego implements Entregable{
 	@Override
 	public String toString() {
 		return "Videojuego [titulo=" + titulo + ", horasEstimadas=" + horasEstimadas + ", entregado=" + entregado
-				+ ", genero=" + genero + ", compañia=" + compañia + "]";
+				+ ", genero=" + genero + ", compañia=" + company + "]";
 	}
 }
