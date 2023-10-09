@@ -42,7 +42,7 @@ public class Serie implements Entregable{
     }
     @Override
     public int compareTo(Object objeto) {
-        return Integer.compare(this.numeroTemporadas, objeto.numeroTemporadas);
+        return Integer.compare(this.numeroTemporadas, ((Serie)objeto).numeroTemporadas);
     }
     
     public String toString() {
