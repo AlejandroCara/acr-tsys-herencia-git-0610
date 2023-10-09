@@ -19,7 +19,7 @@ public class Ej5App {
         System.out.println("Estado del aula:");
         boolean darClase=aula.isDarClase();
         System.out.println("Profesor presente: " + darClase);
-        //System.out.println("Nï¿½mero de estudiantes: " + aula.getNumEstudiantes());
+        //System.out.println("Numero de estudiantes: " + aula.getNumEstudiantes());
         
         if (darClase) {
             System.out.println("Se puede dar clase en esta aula.");
@@ -80,7 +80,7 @@ public class Ej5App {
 			 tmpName = tmpEst.getNombre();
 			 tmpNote = tmpEst.getCalificacionActual();
 			
-			System.out.println("El alumno "+tmpName+" esta aprobado con una calificaciÃ³n de: "+tmpNote);
+			System.out.println("El alumno "+tmpName+" esta aprobado con una calificación de: "+tmpNote);
 		}
 		
 		it = estudiantas.iterator();
@@ -93,7 +93,7 @@ public class Ej5App {
 			 tmpName = tmpEst.getNombre();
 			 tmpNote = tmpEst.getCalificacionActual();
 			
-			System.out.println("La alumna "+tmpName+" esta aprobada con una calificaciÃ³n de: "+tmpNote);
+			System.out.println("La alumna "+tmpName+" esta aprobada con una calificación de: "+tmpNote);
 		}
 		
 	}
