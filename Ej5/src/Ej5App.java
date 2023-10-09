@@ -10,8 +10,7 @@ public class Ej5App {
         Estudiante estudiante2 = new Estudiante("Bob", 20, 'M', 7.2);
         Estudiante estudiante3 = new Estudiante("Charlie", 19, 'M', 6.8);
         
-        
-		Profesor profesor1 = new Profesor("A", 0, 'h', materias.fisica);
+		Profesor profesor1 = new Profesor("Juan", 43, 'h', materias.fisica);
 		
         Aula aula = new Aula(profesor1, materias.filosofia);
         aula.addEstudiante(estudiante1);
@@ -19,7 +18,6 @@ public class Ej5App {
         System.out.println("Estado del aula:");
         boolean darClase=aula.isDarClase();
         System.out.println("Profesor presente: " + darClase);
-        //System.out.println("Numero de estudiantes: " + aula.getNumEstudiantes());
         
         if (darClase) {
             System.out.println("Se puede dar clase en esta aula.");
@@ -29,8 +27,7 @@ public class Ej5App {
         aula.addEstudiante(estudiante3);
         aula.addEstudiante(new Estudiante("David", 22, 'M', 7.0));
         System.out.println("Estado del aula despues de agregar mas estudiantes:");
-        System.out.println("Profesor presente: " + aula.isDarClase());
-        //System.out.println("Numero de estudiantes: " + aula.getNumEstudiantes());
+        System.out.println("Profesor presente llamado "+profesor1.getNombre()+" con edad "+profesor1.getEdad()+": " + aula.isDarClase());
         
         // Contar estudiantes aprobados
         List<Estudiante> estudiantes = new ArrayList<>();
@@ -39,12 +36,6 @@ public class Ej5App {
         estudiantes.add(estudiante3);
         
         showEstudiantes(estudiantes);
-        
-        /*int aprobadosMujeres = contarAprobadosPorGenero(estudiantes, 'F');
-        int aprobadosHombres = contarAprobadosPorGenero(estudiantes, 'M');
-        
-        System.out.println("Estudiantes aprobados (mujeres): " + aprobadosMujeres);
-        System.out.println("Estudiantes aprobados (hombres): " + aprobadosHombres);*/
 	}
 	
 	public static void showEstudiantes(List<Estudiante> alumnado) {
@@ -97,15 +88,5 @@ public class Ej5App {
 		}
 		
 	}
-	
-	/*public static int contarAprobadosPorGenero(List<Estudiante> estudiantes, char genero) {
-        int contador = 0;
-        for (Estudiante estudiante : estudiantes) {
-            if (estudiante.getSexo() == genero && estudiante.getCalificacionActual() >= 5.0) {
-                contador++;
-            }
-        }
-        return contador;
-    }*/
 
 }
