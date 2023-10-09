@@ -23,14 +23,4 @@ public class Profesor extends Persona{
 	}
 	
 	
-	
-	/*private materias checkMateria(String materia) {
-	    String tmpMater = materia.toLowerCase();
-	    for (materias mater : materias.values()) {
-	    	 if (mater.equals(tmpMater)) {
-	    		 return mater;
-	    	 }
-	    }
-	    return materias.matematicas;
-	}*/
 }
