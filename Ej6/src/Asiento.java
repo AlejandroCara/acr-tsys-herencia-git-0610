@@ -11,9 +11,9 @@ public class Asiento {
 		this.ocupado = false;
 	}
 	
-	public Asiento(char fila, Integer columna, Boolean ocupado) {
-		this.columna = fila;
-		this.fila = columna;
+	public Asiento(Integer fila, char columna, Boolean ocupado) {
+		this.columna = columna;
+		this.fila = fila;
 		this.ocupado = ocupado;
 	}
 	
