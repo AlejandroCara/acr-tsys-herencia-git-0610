@@ -1,3 +1,4 @@
+import java.util.Iterator;
 
 public class Ej2App {
 
@@ -7,6 +8,8 @@ public class Ej2App {
 		Videojuego[] videojuegos = new Videojuego[10];
 		Videojuego maxHoras;
 		Serie maxTemporadas;
+		int seriesEntregadas = 0;
+		int videojuegosEntregados = 0;
 		
 		
 		series[0] = new Serie("Simpson", 25, "Comedia", "Alguien");
@@ -20,16 +23,58 @@ public class Ej2App {
 		series[8] = new Serie("Medabots", 2, "Accion", "Alguien7");
 		series[9] = new Serie("Breaking Bad", 5, "Drama", "Alguien8");
 
-		videojuegos[0] = new Videojuego("Baldur's Gate", 120, "RPG", "Larian Studios");
-		videojuegos[0] = new Videojuego("Dark Souls", 56, "RPG", "FromSoftware");
-		videojuegos[0] = new Videojuego("Elden Ring", 110, "RPG", "FromSoftware");
-		videojuegos[0] = new Videojuego("Pokemon Esmeralda", 35, "RPG", "Game Freak");
-		videojuegos[0] = new Videojuego("Age of Empires II", 80, "RTS", "EA");
-		videojuegos[0] = new Videojuego("Battlefield 3", 120, "Shooter", "ElectronicArts");
-		videojuegos[0] = new Videojuego("Borderlands", 60, "Shooter Looter", "GearStudios");
-		videojuegos[0] = new Videojuego("The Witcher III", 80, "RPG", "CD Project RED");
-		videojuegos[0] = new Videojuego("Terraria", 75, "Sandbox", "Re-Logic");
-		videojuegos[0] = new Videojuego("Blasphemous", 25, "Metroidvania", "FromSoftware");
+		videojuegos[0] = new Videojuego("Baldur's Gate", 98, "RPG", "Larian Studios");
+		videojuegos[1] = new Videojuego("Dark Souls", 56, "RPG", "FromSoftware");
+		videojuegos[2] = new Videojuego("Elden Ring", 110, "RPG", "FromSoftware");
+		videojuegos[3] = new Videojuego("Pokemon Esmeralda", 35, "RPG", "Game Freak");
+		videojuegos[4] = new Videojuego("Age of Empires II", 80, "RTS", "EA");
+		videojuegos[5] = new Videojuego("Battlefield 3", 22, "Shooter", "ElectronicArts");
+		videojuegos[6] = new Videojuego("Borderlands", 60, "Shooter Looter", "GearStudios");
+		videojuegos[7] = new Videojuego("The Witcher III", 80, "RPG", "CD Project RED");
+		videojuegos[8] = new Videojuego("Terraria", 75, "Sandbox", "Re-Logic");
+		videojuegos[9] = new Videojuego("Blasphemous", 25, "Metroidvania", "FromSoftware");
+		
+		series[3].entregar();
+		series[5].entregar();
+		series[6].entregar();
+		
+		videojuegos[2].entregar();
+		videojuegos[0].entregar();
+		videojuegos[8].entregar();
+		
+		
+		maxTemporadas = series[0];
+		maxHoras = videojuegos[0];
+		
+		for(int i = 0; i < series.length; i++) {
+			
+			if(series[i].isEntregado()) {
+				seriesEntregadas++;
+				System.out.println(series[i]);
+			}
+			
+			if(series[i].getNumeroTemporadas() > maxTemporadas.getNumeroTemporadas()) {
+				maxTemporadas = series[i];
+			}
+			
+			if(videojuegos[i].isEntregado()) {
+				videojuegosEntregados++;
+				System.out.println(videojuegos[i]);
+			}
+			
+			if(videojuegos[i].getHorasEstimadas() > maxHoras.getHorasEstimadas()) {
+				maxHoras = videojuegos[i];
+			}
+		}
+		
+		System.out.println("\n\n\n");
+		System.out.println("Numero de series entregadas: " + seriesEntregadas);
+		System.out.println("Numero de videojuegos entregados: " + videojuegosEntregados);
+		System.out.println("Serie con mas temporadas: " + maxTemporadas);
+		System.out.println("Videojuego con mas horas estimadas: " + maxHoras);
+		System.out.println("Mejor serie: " + series[3]);
+		
+		
 		
 		
 	}
