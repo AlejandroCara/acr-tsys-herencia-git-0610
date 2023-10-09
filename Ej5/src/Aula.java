@@ -18,7 +18,7 @@ public class Aula {
 		Aula.idGen++;
 	}
 
-	public void addEstudiante(Estudiante estudiante) {
+	public void addAlumno(Estudiante estudiante) {
 		if(alumnos.size() < MAXESTUDIANTES) {
 			alumnos.add(estudiante);
 		}
@@ -35,5 +35,20 @@ public class Aula {
 	public int getId() {
 		return this.id;
 	}
-
+	
+	public Profesor getProfesor() {
+		return this.profesor;
+	}
+	
+	public Ej5App.materias getMateria(){
+		return this.materia;
+	}
+	
+	public void setMateria(Ej5App.materias materia) {
+		this.materia = materia;
+	}
+	
+	public ArrayList<Estudiante> getAlumnos(){
+		return this.alumnos;
+	}
 }
