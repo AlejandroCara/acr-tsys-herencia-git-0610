@@ -8,7 +8,7 @@ public class Asiento {
 	public Asiento() {
 		this.columna = 'A';
 		this.fila = 0;
-		//this.ocupado = false;
+		this.ocupado = false;
 	}
 	
 	public Asiento(Integer fila, char columna) {
@@ -35,20 +35,4 @@ public class Asiento {
 	public void setOcupado(boolean ocupado) {
 		this.ocupado = ocupado;
 	}
-	
-	/*public Integer checkColumna(Integer columna) {
-		if(MIN_FILA<=columna || MAX_FILA>=columna) {
-			return columna;
-		}else {
-			return 0;
-		}
-	}*/
-	
-	/*public char checkFila(char fila) {
-		if(MIN_FILA<=columna || MAX_FILA>=columna) {
-			return columna;
-		}else {
-			return 'A';
-		}
-	}*/
 }
