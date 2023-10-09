@@ -39,7 +39,7 @@ public class Cine {
             }
 
             if (!espectador.cumpleRequisitos(pelicula, precio)) {
-                System.out.println(espectador.getNombre() + " no ha ocupado ningún asiento, no cumple con los requisitos: Edad mínima " + pelicula.getEdadMinima() + "/" + espectador.getEdad() + ", Dinero disponible " + precio + "/" + espectador.getDinero());
+                System.out.println(espectador.getNombre() + " no ha ocupado ningun asiento, no cumple con los requisitos: Edad minima " + pelicula.getEdadMinima() + "->" + espectador.getEdad() + ", Dinero disponible " + precio + "->" + espectador.getDinero());
                 return;
             }
         }
